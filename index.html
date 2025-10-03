@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ногтевая студия MIU</title>
+    <style>
+        body, h1, h2, h3, p, ul, ol, li, figure, figcaption, footer, header, nav, main, section, aside {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; 
+        }
+
+        
+        body {
+            color: #972066;
+            background-color: #e7b4c0; 
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+            line-height: 1.6; 
+        }
+
+        h1, h2, h3 {
+            font-family: 'Georgia', serif; 
+            margin-bottom: 0.8em; 
+            color: #701c46; 
+        }
+
+        h1 {
+            font-size: 2.5em;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #d85f87;
+            padding-bottom: 5px;
+            margin-top: 20px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 1em;
+            margin-bottom: 1em;
+        }
+
+        ul, ol {
+            margin-bottom: 1em;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 0.5em;
+        }
+
+        .site-header {
+            background-color: #b44693;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav {
+            background-color: #a82a69;
+            padding: 10px 0;
+            text-align: center;
+            border-bottom: 2px solid #333333;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 15px;
+        }
+        .centered-image img {
+            display: block; 
+            margin: 20px auto; 
+            max-width: 70%; 
+            height: auto; 
+            border-radius: 5px;
+            border: 3px solid #b4466b;
+        }
+
+        .float-left {
+            float: left;
+            margin: 0 20px 20px 0;
+            max-width: 30%;
+            border-radius: 5px;
+        }
+
+        .float-right {
+            float: right;
+            margin: 0 0 20px 20px;
+            max-width: 30%;
+            border-radius: 5px;
+        }
+
+        /* Для очистки float */
+        main::after, section::after, header::after, footer::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        figure {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #e0f2f7;
+            border: 1px dashed #a05f75;
+            border-radius: 5px;
+        }
+
+        figcaption {
+            font-size: 0.9em;
+            color: #555;
+            text-align: center;
+            margin-top: 5px;
+        }
+        a {
+            color: #ff008c;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #b3004b;
+            text-decoration: underline;
+        }
+
+        .button-link {
+            display: inline-block;
+            background-color: #a72868;
+            color: #ffffff !important; 
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button-link:hover {
+            background-color: #882126;
+            color: #ffffff !important;
+            text-decoration: none;
+        }
+
+        .email-link {
+            color: #dc3545;
+            font-weight: bold;
+        }
+
+        .email-link:hover {
+            color: #c82333;
+            text-decoration: underline;
+        }
+        #sidebar {
+            background-color: #f5a9cd;
+            padding: 20px;
+            border-radius: 5px;
+            margin-left: 20px;
+            width: 250px;
+            float: right;
+        }
+        .site-footer {
+            background-color: #252633;
+            color: #a87287;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 30px;
+            font-size: 0.95em;
+            border-top: 3px solid #eb72c3;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>Добро пожаловать на мою страницу!</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="index2.html">Другие процедуры</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="main-content">
+            <h2 id="intro-heading">Услуги студии MIU NAIL</h2>
+            <p id="special-intro">
+                MIU NAIL – это фабрика красоты. Кудесники ногтевого сервиса, мастера по уходу за бровями и ресницами, визажисты и парикмахеры-стилисты творят чудеса, воплощая в жизнь ваши самые смелые фантазии.
+            </p>
+
+            <p>
+                Мы предоставляем полный перечень услуг, связанных с красотой и здоровьем ваших ногтей. Наши двери открыты для всех. Женский, мужской и детский маникюр в студиях Ликс NAIL с использованием современных технологий, безопасных техник и качественных материалов.
+            </p>
+
+            <img src="маникюр.jpg" alt="Нюдовый маникюр" class="float-left">
+            <p>
+               На протяжении нескольких лет центр косметологии MIU оказывает профессиональные услуги в области эстетической медицины. Основное достоинство кабинета заключается в том, что в практике сотрудники используют новейшие технологии и самые безопасные методы омоложения и коррекции тела. Их влияние на организм пациента проверяется индивидуально. Широчайший перечень инновационных услуг - еще одна особенность кабинета. Для каждого пациента специалисты центра ELITE подбирают индивидуальные способы, приемы лечения, процедуры по уходу за телом и лицом, техники массажа и многое другое.
+             </p>
+            <p>
+                Помимо этого, клиенты могут посетить кабинет коррекции фигуры. Специалист поможет не только составить правильный рацион питания. Помимо этого, используя современное оборудование, клиент сможет пройти безоперационную липосакцию, эффективное лечение целлюлита. В косметологическом кабинете MIU также проводится удаление растяжек, подтяжка, улучшение текстуры кожи. Аппаратная коррекция фигуры - очень действенная процедура, которая обеспечивает положительный результат.
+            </p>
+
+
+            <h3>Дополнительные возможности</h3>
+            <p>
+                Центр косметологии работает по следующим популярным направлениям::
+            </p>
+            <ul>
+                <li>аппаратная косметология;</li>
+                <li>инъекционная косметология;</li>
+                <li>эстетическая косметология;</li>
+                <li>маникюр, педикюр.</li>
+            </ul>
+
+        </section>
+
+        <aside id="sidebar">
+            <h3>Акция 15% на первый визит</h3>
+            <p>Для наших новых гостей действует скидка 15% на любую услугу</p>
+            
+            <a href="#" class="button-link" style="background-color: #f1bcd9; color: white;">Кнопка (наверх)</a>
+        </aside>
+        <figure class="centered-image">
+                <img src="маникюр2.jpg" alt="Креативный дизайн">
+                <figcaption>Маникюр от лучшего мастера</figcaption>
+            </figure>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; Ермакова Анастасия</p>
+    </footer>
+
+</body>
+</html>
