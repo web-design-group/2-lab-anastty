@@ -1,0 +1,222 @@
+body {
+    color: #972066;
+    background-color: #e7b4c0; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    line-height: 1.6; 
+}
+
+h1, h2, h3 {
+    font-family: 'Georgia', serif; 
+    margin-bottom: 0.8em; 
+    color: #701c46; 
+}
+
+h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #d85f87;
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+ul, ol {
+    margin-bottom: 1em;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 0.5em;
+}
+
+.site-header {
+    background-color: #b44693;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #a82a69;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid #333333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+}
+.centered-image img {
+    display: block; 
+    margin: 20px auto; 
+    max-width: 70%; 
+    height: auto; 
+    border-radius: 5px;
+    border: 3px solid #b4466b;
+}
+
+.float-left {
+    float: left;
+    margin: 0 20px 20px 0;
+    max-width: 30%;
+    border-radius: 5px;
+}
+
+.float-right {
+    float: right;
+    margin: 0 0 20px 20px;
+    max-width: 30%;
+    border-radius: 5px;
+}
+
+/* Для очистки float */
+main::after, section::after, header::after, footer::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+figure {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #e0f2f7;
+    border: 1px dashed #a05f75;
+    border-radius: 5px;
+}
+
+figcaption {
+    font-size: 0.9em;
+    color: #555;
+    text-align: center;
+    margin-top: 5px;
+}
+a {
+    color: #ff008c;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #b3004b;
+    text-decoration: underline;
+}
+
+.button-link {
+    display: inline-block;
+    background-color: #a72868;
+    color: #ffffff !important; 
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+    background-color: #882126;
+    color: #ffffff !important;
+    text-decoration: none;
+}
+
+.email-link {
+    color: #dc3545;
+    font-weight: bold;
+}
+
+/* Стили для второй страницы, которые используют общие классы */
+
+/* Стили для контента в <main> */
+main {
+    display: flex; /* Используем Flexbox для расположения основного контента и сайдбара */
+    flex-wrap: wrap; /* Разрешаем перенос на новую строку */
+    gap: 20px; /* Отступ между блоками */
+    margin: 20px auto;
+    max-width: 1200px; /* Ограничиваем ширину основного контента */
+    padding: 0 20px; /* Отступы по бокам */
+}
+
+/* Основной контент займет большую часть места */
+main > section,
+main > article,
+main > aside {
+    flex: 2; /* Базовый рост */
+    min-width: 300px; /* Минимальная ширина, чтобы избежать слишком узких колонок */
+}
+
+/* Сайдбар будет занимать меньше места */
+#sidebar-about {
+    flex: 1; /* Меньший рост */
+    min-width: 200px;
+    background-color: #f0f8ff; /* Легкий фон для сайдбара */
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px dashed #cce0f2;
+}
+
+#sidebar-about h3 {
+    margin-top: 0;
+    color: #512f66;
+}
+
+#sidebar-about p {
+    margin-bottom: 0.7em;
+}
+
+/* Адаптивность: на маленьких экранах все будет в одну колонку */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column; /* Располагаем элементы друг под другом */
+    }
+    #sidebar-about {
+        order: 2; /* Перемещаем сайдбар вниз */
+    }
+    main > section,
+    main > article,
+    main > aside {
+        order: 1; /* Основной контент будет сверху */
+    }
+}
+
+/* Общие стили для изображений внутри aside/article, чтобы они не ломали верстку */
+article img,
+aside img {
+    max-width: 100%; /* Изображение не будет вылезать за пределы родителя */
+    height: auto; /* Сохраняем пропорции */
+    display: block; /* Убираем лишний отступ снизу */
+    margin-top: 10px; /* Небольшой отступ сверху */
+    border-radius: 5px; /* Скругляем углы */
+}
+
+/* Улучшим внешний вид футера */
+.site-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px 0;
+    background-color: #a82a69;
+    color: #ffffff;
+    font-size: 0.9em;
+}
